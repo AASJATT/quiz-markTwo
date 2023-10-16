@@ -7,12 +7,12 @@ console.log("Welcome! ",userName,"to GENERAL AWARENESS quiz!");
 
 function play(question,answer){
  var userAnswer = readlineSync.question(question);
-  if(userAnswer===answer){
+  if(userAnswer.toUpperCase()===answer.toUpperCase()){
     console.log("Right!")
     score=score+1;
     
   }else{
-    console.log("Wrong!")
+    console.log("Wrong! The correct answer is ", answer);
     score=score-1;
      }
   
